@@ -1,7 +1,6 @@
 class Api::V1::PostcardsController < ApplicationController
 
     def index
-        puts "Hello"
         @postCards = Postcard.all
         render json: @postCards
     end
@@ -47,6 +46,6 @@ class Api::V1::PostcardsController < ApplicationController
     private
 
     def postcard_params
-        params.permit(:message, :name, :address_id)
+        params.permit(:message, :name, :address_id, :state_id, :url)
     end
 end

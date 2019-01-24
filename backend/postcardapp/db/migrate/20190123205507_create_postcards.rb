@@ -4,6 +4,8 @@ class CreatePostcards < ActiveRecord::Migration[5.2]
       t.text :message
       t.string :name
       t.belongs_to :address, foreign_key: true
+      t.belongs_to :state, foreign_key: true
+      t.string :url
 
       t.timestamps
     end
