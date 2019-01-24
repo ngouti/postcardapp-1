@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,6 +11,17 @@
 </head>
 
 <body>
+    <!-- <table width="auto" height="170px" style="width:100%;text-align:center;background-color:lightyellow;">
+        <tr>
+            <td colspan="5"></td>
+          </tr>
+      
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="2" style="font-size: 4em; font-weight: bold; position: center; top: 25px;">
+              <a>Post Card Creator</a></td>
+          </tr>
+          </table> -->
   <div class="postcarddiv">
     <form class="postcardform" action="index.html" method="post">
       <textarea name="message" rows="8" cols="80" placeholder="Message"></textarea>
@@ -17,9 +29,11 @@
       <input type="text" name="name" value="" placeholder="name">
       <input id="street" type="text" name="street" value="" placeholder="street">
       <input type="text" name="city" value="" placeholder="city">
+      <button id="postcardbutton" type="submit" name="submit">Send</button>
       </div>
     </form>
   </div>
+  <script src="index.js" charset="utf-8"></script>
 </body>
 
 </html>
